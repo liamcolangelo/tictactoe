@@ -1,0 +1,21 @@
+html {
+    background-color: lightblue;
+}
+
+button {
+    text-align: center;
+    border-color: darkblue;
+    border-width: 4px;
+    background-color: lightblue;
+    font-family: 'Brush Script MT', cursive;
+    font-size: xx-large;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-self: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

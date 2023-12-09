@@ -1,0 +1,126 @@
+html {
+    background-color: lightblue;
+}
+
+#gridDiv {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#gridDiv div {
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    text-align: center;
+}
+
+button {
+    background-color: lightblue;
+    border-color: black;
+    color: black;
+    font-family: 'Brush Script MT', cursive;
+    font-size: xx-large;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#display {
+    font-family: 'Brush Script MT', cursive;
+    color: black;
+    text-align: center;
+    min-height: 50px;
+    margin-top: 25px;
+}
+
+#reset {
+    text-align: center;
+    min-width: 200px;
+    min-height: 50px;
+    max-height: 75px;
+    margin: auto;
+    margin-top: 25px;
+    display: block;
+    border-color: lightblue;
+    border-width: 0;
+}
+
+#resetDiv {
+    align-items: center;
+    justify-content: center;
+}
+
+#refresh {
+    text-align: center;
+    min-width: 200px;
+    min-height: 50px;
+    max-height: 75px;
+    margin: auto;
+    margin-top: 25px;
+    display: block;
+    border-color: lightblue;
+    border-width: 0;
+}
+
+#b0 {
+    border-top: 0;
+    border-left: 0;
+}
+
+#b1 {
+    border-top: 0;
+}
+
+#b2 {
+    border-top: 0;
+    border-right: 0;
+}
+
+#b3 {
+    border-left: 0;
+}
+
+#b5 {
+    border-right: 0;
+}
+
+#b6 {
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#b7 {
+    border-bottom: 0;
+}
+
+#b8 {
+    border-bottom: 0;
+    border-right: 0;
+}
+
+#refresh {
+    font-size: large;
+    height: 30px;
+    border-width: 0px;
+    color: black;
+}
+
+#home {
+    min-width: 200px;
+    min-height: 25px;
+    max-height: 75px;
+    margin: auto;
+    margin-left: 25px;
+    margin-top: 25px;
+    display: block;
+    border-color: lightblue;
+    border-width: 0;
+}
