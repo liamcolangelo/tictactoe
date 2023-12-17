@@ -52,7 +52,7 @@ function check_difference (new_board) {
 
 
 
-document.getElementById("home").addEventListener("click", function () {window.location.href = "/"});
+document.getElementById("home").addEventListener("click", function () {window.location.href = "/distant/reset"});
 document.getElementById("b0").addEventListener("click", function () {take_turn("0")});
 document.getElementById("b1").addEventListener("click", function () {take_turn("1")});
 document.getElementById("b2").addEventListener("click", function () {take_turn("2")});
@@ -62,7 +62,9 @@ document.getElementById("b5").addEventListener("click", function () {take_turn("
 document.getElementById("b6").addEventListener("click", function () {take_turn("6")});
 document.getElementById("b7").addEventListener("click", function () {take_turn("7")});
 document.getElementById("b8").addEventListener("click", function () {take_turn("8")});
-document.getElementById("refresh").addEventListener("click", function () {
+var intervalID = window.setInterval(refresh, 1000);
+
+function refresh () {
     let new_board = $.ajax({
         type: "GET",
         url: "/distant/board",
@@ -107,5 +109,5 @@ document.getElementById("refresh").addEventListener("click", function () {
     }).catch(function(error) {
         console.log("Error occurred:", error);
     });
-});
+};
 
